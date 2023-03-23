@@ -1,8 +1,5 @@
 //
 //  AppDelegate.swift
-//  CoreMLDemo
-//
-//  Created by Afraz Siddiqui on 3/18/21.
 //
 
 import UIKit

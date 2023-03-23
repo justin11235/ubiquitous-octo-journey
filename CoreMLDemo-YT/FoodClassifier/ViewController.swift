@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     private let shutter: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        button.layer.borderWidth = 8
+        button.layer.borderWidth = 6
         button.layer.cornerRadius = 50
         button.layer.borderColor = UIColor.white.cgColor
         return button
@@ -50,6 +50,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         shutter.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
         
         view.addSubview(label)
+        
         //view.addSubview(imageView)
 
 //        let tap = UITapGestureRecognizer(
@@ -65,7 +66,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     {
         super.viewDidLayoutSubviews()
         previewLayer.frame = view.bounds
-        shutter.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height - 150)
+        shutter.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height - 100)
         
         label.frame = CGRect(
                     x: 20,
@@ -147,7 +148,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //    }
 
     private func analyzeImage(image: UIImage?) {
-        guard let buffer = image?.resize(size: CGSize(width: 224, height: 224))?
+        guard let buffer = image?.resize(size: CGSize(width: 299, height: 299))?
                 .getCVPixelBuffer() else {
             return
         }
@@ -209,9 +210,12 @@ extension ViewController: AVCapturePhotoCaptureDelegate
         
         // if the code crashes then try changing the exlamation mark to question mark ********************************
         
-        //imageView.contentMode = .scaleAspectFill
-        //imageView.frame = view.bounds
-        view.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFill
+        imageView.frame = view.bounds
+        
+        
+        //THIS ADDS THE RESIZED IMAGE TO THE DISPLAY, UNCOMMENT IF WANT TO IMPLEMENT
+        //view.addSubview(imageView)
         analyzeImage(image: resized)
     }
 }
