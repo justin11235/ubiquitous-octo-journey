@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83F69AA42603854D00CAC7F3 /* CoreMLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F69AA42603854D00CAC7F3 /* FoodClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F69AA72603854D00CAC7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F69AA92603854D00CAC7F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83F69AAB2603854D00CAC7F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		83F69A9B2603854D00CAC7F3 = {
 			isa = PBXGroup;
 			children = (
-				83F69AA62603854D00CAC7F3 /* CoreMLDemo */,
+				83F69AA62603854D00CAC7F3 /* FoodClassifier */,
 				83F69AA52603854D00CAC7F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		83F69AA52603854D00CAC7F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83F69AA42603854D00CAC7F3 /* CoreMLDemo.app */,
+				83F69AA42603854D00CAC7F3 /* FoodClassifier.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83F69AA62603854D00CAC7F3 /* CoreMLDemo */ = {
+		83F69AA62603854D00CAC7F3 /* FoodClassifier */ = {
 			isa = PBXGroup;
 			children = (
 				83F69ABF2603859600CAC7F3 /* Extensions.swift */,
@@ -73,15 +73,15 @@
 				83F69AB22603854F00CAC7F3 /* LaunchScreen.storyboard */,
 				83F69AB52603854F00CAC7F3 /* Info.plist */,
 			);
-			path = CoreMLDemo;
+			path = FoodClassifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83F69AA32603854D00CAC7F3 /* CoreMLDemo */ = {
+		83F69AA32603854D00CAC7F3 /* FoodClassifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83F69AB82603854F00CAC7F3 /* Build configuration list for PBXNativeTarget "CoreMLDemo" */;
+			buildConfigurationList = 83F69AB82603854F00CAC7F3 /* Build configuration list for PBXNativeTarget "FoodClassifier" */;
 			buildPhases = (
 				83F69AA02603854D00CAC7F3 /* Sources */,
 				83F69AA12603854D00CAC7F3 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreMLDemo;
+			name = FoodClassifier;
 			productName = CoreMLDemo;
-			productReference = 83F69AA42603854D00CAC7F3 /* CoreMLDemo.app */;
+			productReference = 83F69AA42603854D00CAC7F3 /* FoodClassifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83F69A9F2603854D00CAC7F3 /* Build configuration list for PBXProject "CoreMLDemo" */;
+			buildConfigurationList = 83F69A9F2603854D00CAC7F3 /* Build configuration list for PBXProject "FoodClassifier" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83F69AA32603854D00CAC7F3 /* CoreMLDemo */,
+				83F69AA32603854D00CAC7F3 /* FoodClassifier */,
 			);
 		};
 /* End PBXProject section */
@@ -300,12 +300,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YP3WVCPHJ;
-				INFOPLIST_FILE = CoreMLDemo/Info.plist;
+				INFOPLIST_FILE = FoodClassifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.iosacademy.CoreMLDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.FoodClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,12 +319,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YP3WVCPHJ;
-				INFOPLIST_FILE = CoreMLDemo/Info.plist;
+				INFOPLIST_FILE = FoodClassifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.iosacademy.CoreMLDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.FoodClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83F69A9F2603854D00CAC7F3 /* Build configuration list for PBXProject "CoreMLDemo" */ = {
+		83F69A9F2603854D00CAC7F3 /* Build configuration list for PBXProject "FoodClassifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83F69AB62603854F00CAC7F3 /* Debug */,
@@ -343,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83F69AB82603854F00CAC7F3 /* Build configuration list for PBXNativeTarget "CoreMLDemo" */ = {
+		83F69AB82603854F00CAC7F3 /* Build configuration list for PBXNativeTarget "FoodClassifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83F69AB92603854F00CAC7F3 /* Debug */,
