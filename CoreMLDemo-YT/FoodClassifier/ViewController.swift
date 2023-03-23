@@ -53,13 +53,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         //view.addSubview(imageView)
 
-//        let tap = UITapGestureRecognizer(
-//            target: self,
-//            action: #selector(didTapImage)
-//        )
-//        tap.numberOfTapsRequired = 1
-//        imageView.isUserInteractionEnabled = true
-//        imageView.addGestureRecognizer(tap)
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(retake)
+        )
+        tap.numberOfTapsRequired = 1
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(tap)
     }
     
     override func viewDidLayoutSubviews()
@@ -186,6 +186,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @objc private func didTapTakePhoto()
     {
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+    }
+    
+    @objc func retake()
+    {
+        DispatchQueue.global(qos: .background).async {
+            self.session!.startRunning()
+            
+        }
     }
 }
 
